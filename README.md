@@ -11,6 +11,25 @@ This code uses MATLAB Statistics and Machine Learning Toolbox, MATLAB Optimizati
 ## Demo
 Run `demo_main.m` in MATLAB.
 
+## Main Functions
+The MIMRF-BFM Algorithm runs using the following function:  
+`[measure, initialMeasure, Analysis] = learnCIMeasure_bfm_multires(Bags, Labels, Parameters)`
+
+## Inputs
+The _Bags_ input is a 1xNumTrainBags cell array. Inside each cell, NumPntsInBag x nSources cell. Inside each cell, the "collection" of all possible combinations generated from the multi-resolution data set.
+
+The Labels input is a 1xNumTrainBags double vector that takes values of "1" and "0" for two-class classification problems - Training labels for each bag.
+
+## Parameters
+The parameters can be set in the following functions:  
+`[Parameters] = learnCIMeasureParams()`  
+
+The parameters is a MATLAB structure with the following fields:
+1. eta: percentage of time to make small-scale mutation
+2. analysis: if = "1", save all intermediate results
+3. exaustiveSearchThresh: count threshold for number of repeated samples
+4. fitnessUpdateThresh: count threshold for number of times new BFM samples do not improve over past iterations
+
 ## Citing MIMRF
 If you use the MIMRF-BFM multi-resolution fusion algorithm, please cite the following reference using the following BibTeX entries.
 ```
