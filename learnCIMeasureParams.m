@@ -13,12 +13,10 @@ function [Parameters] = learnCIMeasureParams()
 %
                
 %Parameters.nPop = 30; %Size of population (parallel processing not implemented)
-Parameters.sigma = 0.1; %Sigma of Gaussians in fitness function
 Parameters.eta = 0.5; %Percentage of time to make small-scale mutation
-Parameters.sampleVar = 0.1; %variance around sample mean
 Parameters.analysis = 1; % if ="1", record all intermediate results
-Parameters.exaustiveSearchThresh = 500;
-Parameters.fitnessUpdateThresh = 100;
+Parameters.exaustiveSearchThresh = 500; % count threshold for number of repeated samples
+Parameters.fitnessUpdateThresh = 100; % count threshold for number of times new BFM samples do not improve over past iterations
 end
 
  

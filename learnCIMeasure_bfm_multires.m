@@ -149,7 +149,6 @@ end
 
 lowerindex = Parameters.lowerindex;
 upperindex = Parameters.upperindex;
-sampleVar = Parameters.sampleVar;
 
 initialMeasure = sampleMeasure_bfm(eta, nSources,lowerindex,upperindex);
 J_best = evalFitness_bfm_multires(Labels, initialMeasure, n_bags, nPntsBags, oneV, bag_row_ids, diffM);
