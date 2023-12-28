@@ -65,7 +65,7 @@ addpath('util')
 [Bags, Labels, Seg] = generateSimData_MU();
 %%%%%%%  Training Stage: Learn measures given training Bags and Labels
 [Parameters] = learnCIMeasureParams(); %user-set MIMRF parameters
-[measure_MIMRF_BFM, initialMeasure_MIMRF_BFM, Analysis_MIMRF_BFM] = learnCIMeasure_bfm_multires(Bags, Labels, Parameters);%noisy-or model
+[measure_MIMRF_BFM, initialMeasure_MIMRF_BFM, Analysis_MIMRF_BFM] = learnCIMeasure_bfm_multires(Bags, Labels, Parameters);%minmax model
 %%%%%%%  Testing Stage: Given the learned measures above, compute and plot fusion results
 [TestConfMap] = computeTestMap(Bags, Labels, measure_MIMRF_BFM, Seg);
 
