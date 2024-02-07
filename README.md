@@ -30,6 +30,11 @@ The parameters is a MATLAB structure with the following fields:
 3. exaustiveSearchThresh: count threshold for number of repeated samples
 4. fitnessUpdateThresh: count threshold for number of times new BFM samples do not improve over past iterations
 
+## License
+This source code is licensed under the license found in the [`LICENSE`](LICENSE) file in the root directory of this source tree.
+
+This product is Copyright (c) 2023 H. Vakharia and X. Du. All rights reserved.
+
 ## Citing MIMRF-BFM
 If you use the MIMRF-BFM multi-resolution fusion algorithm, please cite the following reference using the following BibTeX entries.
 ```
