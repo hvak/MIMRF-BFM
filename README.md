@@ -3,7 +3,7 @@
 
 _Hersh Vakharia and Xiaoxiao Du_
 
-[[`IEEEXplore`](https://ieeexplore.ieee.org/document/10282851)]
+[[`arXiv`](https://arxiv.org/abs/2402.05045)] [[`IEEEXplore`](https://ieeexplore.ieee.org/document/10282851)]
 
 ## Installation Prerequisites
 This code uses MATLAB Statistics and Machine Learning Toolbox, MATLAB Optimization Toolbox and MATLAB Parallel Computing Toolbox.  
